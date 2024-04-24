@@ -22,9 +22,9 @@ public class Custody {
 
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     @Column(name = "contract_date")
-    private LocalDateTime contract_date;
+    private LocalDateTime contractDate;
 
     @Column(name = "simulation_id")
-    private String simulation_id;
+    private String simulationId;
 
 }

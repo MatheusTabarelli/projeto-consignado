@@ -6,20 +6,20 @@ public record SimulationDTO(
 
         Long id,
 
-        LocalDateTime simulation_date,
+        LocalDateTime simulationDate,
 
         String cpf,
 
         String covenant,
 
-        Double requested_amount,
+        Double requestedAmount,
 
         Double fee,
 
-        Integer number_installments,
+        Integer numberInstallments,
 
-        Double payment_amount,
+        Double paymentAmount,
 
-        Double installment_value) {
+        Double installmentValue) {
 
 }

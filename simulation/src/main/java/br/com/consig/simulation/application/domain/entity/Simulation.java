@@ -22,7 +22,7 @@ public class Simulation {
 
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     @Column(name = "simulation_date")
-    private LocalDateTime simulation_date;
+    private LocalDateTime simulationDate;
 
     @Column(name = "cpf")
     private String cpf;
@@ -31,18 +31,18 @@ public class Simulation {
     private String covenant;
 
     @Column(name = "requested_amount")
-    private Double requested_amount;
+    private Double requestedAmount;
 
     @Column(name = "fee")
     private Double fee;
 
     @Column(name = "number_installments")
-    private Integer number_installments;
+    private Integer numberInstallments;
 
     @Column(name = "payment_amount")
-    private Double payment_amount;
+    private Double paymentAmount;
 
     @Column(name = "installment_value")
-    private Double installment_value;
+    private Double installmentValue;
 
 }

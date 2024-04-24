@@ -12,8 +12,8 @@ public class CustodyConverter {
     public Custody toEntity(CustodyDTO custodyDTO) {
         return Custody.builder()
                 .id(custodyDTO.id())
-                .contract_date(custodyDTO.contract_date())
-                .simulation_id(custodyDTO.simulation_id())
+                .contractDate(custodyDTO.contractDate())
+                .simulationId(custodyDTO.simulationId())
                 .build();
 
     }

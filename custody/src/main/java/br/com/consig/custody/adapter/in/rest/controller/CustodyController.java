@@ -1,6 +1,7 @@
 package br.com.consig.custody.adapter.in.rest.controller;
 
 import br.com.consig.custody.adapter.in.rest.datatransfer.CustodyDTO;
+import br.com.consig.custody.adapter.in.rest.datatransfer.CustodyInputDTO;
 import br.com.consig.custody.port.inbound.CustodyUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,8 +28,8 @@ public class CustodyController {
     }
 
     @PostMapping()
-    public ResponseEntity<CustodyDTO> save(@RequestBody CustodyDTO custodyDTO) {
-        return ResponseEntity.ok(custodyUseCase.saveCustody(custodyDTO));
+    public ResponseEntity<CustodyDTO> save(@RequestBody CustodyInputDTO custodyInputDTO) {
+        return ResponseEntity.ok(custodyUseCase.saveCustody(custodyInputDTO));
     }
 
 }

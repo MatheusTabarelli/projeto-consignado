@@ -4,8 +4,8 @@ public record SimulationDataDTO (
 
         String cpf,
 
-        Double requested_amount,
+        Double requestedAmount,
 
-        Integer number_installment){
+        Integer numberInstallment){
 
 }

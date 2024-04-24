@@ -13,7 +13,7 @@ public class CustomerConverter {
         return Customer.builder()
                 .cpf(customerResponseDTO.cpf())
                 .name(customerResponseDTO.name())
-                .account_holder(customerResponseDTO.account_holder())
+                .accountHolder(customerResponseDTO.accountHolder())
                 .segment(customerResponseDTO.segment())
                 .covenant(customerResponseDTO.covenant())
                 .build();

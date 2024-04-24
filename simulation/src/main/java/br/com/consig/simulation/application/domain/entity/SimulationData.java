@@ -13,10 +13,10 @@ public class SimulationData {
     @JsonProperty("cpf")
     private String cpf;
 
-    @JsonProperty("requested_amount")
-    private Double requested_amount;
+    @JsonProperty("requestedAmount")
+    private Double requestedAmount;
 
-    @JsonProperty("number_installment")
-    private Integer number_installment;
+    @JsonProperty("numberInstallment")
+    private Integer numberInstallment;
 
 }
