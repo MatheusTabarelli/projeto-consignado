@@ -2,7 +2,6 @@ package br.com.consig.customer.register.application.domain.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.antlr.v4.runtime.misc.NotNull;
 
 @Entity
 @Table(name = "tb_customers")
@@ -25,7 +24,7 @@ public class Customer {
     private String name;
 
     @Column(name = "account_holder")
-    private Boolean account_holder;
+    private Boolean accountHolder;
 
     @Column(name = "segment")
     private String segment;

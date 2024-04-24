@@ -20,7 +20,7 @@ public class Customer {
     private String name;
 
     @JsonProperty("account_holder")
-    private Boolean account_holder;
+    private Boolean accountHolder;
 
     @JsonProperty("segment")
     private String segment;

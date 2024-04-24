@@ -12,14 +12,14 @@ public class SimulationConverter {
     public Simulation toEntity(SimulationDTO simulationDTO) {
         return Simulation.builder()
                 .id(simulationDTO.id())
-                .simulation_date(simulationDTO.simulation_date())
+                .simulationDate(simulationDTO.simulationDate())
                 .cpf(simulationDTO.cpf())
                 .covenant(simulationDTO.covenant())
-                .requested_amount(simulationDTO.requested_amount())
+                .requestedAmount(simulationDTO.requestedAmount())
                 .fee(simulationDTO.fee())
-                .number_installments(simulationDTO.number_installments())
-                .payment_amount(simulationDTO.payment_amount())
-                .installment_value(simulationDTO.installment_value())
+                .numberInstallments(simulationDTO.numberInstallments())
+                .paymentAmount(simulationDTO.paymentAmount())
+                .installmentValue(simulationDTO.installmentValue())
                 .build();
 
     }

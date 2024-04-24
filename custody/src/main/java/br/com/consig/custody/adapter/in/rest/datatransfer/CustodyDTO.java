@@ -5,8 +5,8 @@ import java.time.LocalDateTime;
 public record CustodyDTO (
         Long id,
 
-        LocalDateTime contract_date,
+        LocalDateTime contractDate,
 
-        String simulation_id) {
+        String simulationId) {
 
 }

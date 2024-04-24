@@ -12,8 +12,8 @@ public class SimulationDataConverter {
     public SimulationData toEntity(SimulationDataDTO simulationDataDTO) {
         return SimulationData.builder()
                 .cpf(simulationDataDTO.cpf())
-                .requested_amount(simulationDataDTO.requested_amount())
-                .number_installment(simulationDataDTO.number_installment())
+                .requestedAmount(simulationDataDTO.requestedAmount())
+                .numberInstallment(simulationDataDTO.numberInstallment())
                 .build();
     }
 

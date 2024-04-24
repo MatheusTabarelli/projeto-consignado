@@ -8,7 +8,7 @@ public record  CustomerResponseDTO (
 
         String name,
 
-        Boolean account_holder,
+        Boolean accountHolder,
 
         String segment,
 

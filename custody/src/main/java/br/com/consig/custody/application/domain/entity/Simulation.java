@@ -23,7 +23,7 @@ public class Simulation {
 
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     @JsonProperty("simulation_date")
-    private LocalDateTime simulation_date;
+    private LocalDateTime simulationDate;
 
     @JsonProperty("cpf")
     private String cpf;
@@ -31,19 +31,19 @@ public class Simulation {
     @JsonProperty("covenant")
     private String covenant;
 
-    @JsonProperty("requested_amount")
-    private Double requested_amount;
+    @JsonProperty("requestedAmount")
+    private Double requestedAmount;
 
     @JsonProperty("fee")
     private Double fee;
 
-    @JsonProperty("number_installments")
-    private Integer number_installments;
+    @JsonProperty("numberInstallments")
+    private Integer numberInstallments;
 
     @JsonProperty("payment_amount")
-    private Double payment_amount;
+    private Double paymentAmount;
 
     @JsonProperty("installment_value")
-    private Double installment_value;
+    private Double installmentValue;
 
 }
