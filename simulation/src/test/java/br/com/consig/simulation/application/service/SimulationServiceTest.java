@@ -50,14 +50,10 @@ public class SimulationServiceTest {
     private CustomerConverter customerConverter;
     @Mock
     private SimulationDataConverter simulationDataConverter;
-    //    @Autowired
-//    private SimulationRepository simulationRepository;
     @Mock
     private RecoverCustomerClient recoverCustomerClient;
     @InjectMocks
     private SimulationService simulationService;
-//    @Autowired
-//    private SimulationMapper simulationMapper;
     @Autowired
     private SimulationConverter simulationConverter;
     @Autowired
@@ -230,58 +226,8 @@ public class SimulationServiceTest {
         assertEquals(20.0, result.getInstallmentValue(), 0.01);
     }
 
-//    @Test
-//    public void testGetByIdAndCpf() {
-//        String cpf = "111.111.111-11";
-//        Long id = 1L;
-//
-//        Simulation simulation = new Simulation();
-//        simulation.setCpf(cpf);
-//        simulation.setNumberInstallments(12);
-//        simulation.setSimulationDate(LocalDateTime.now());
-//        simulation.setCovenant("Varejo");
-//        simulation.setFee(2.6);
-//        simulation.setRequestedAmount(100.0);
-//        simulation.setInstallmentValue(20.0);
-//        simulation.setPaymentAmount(120.0);
-//
-//        Customer customer = new Customer();
-//        customer.setCpf(cpf);
-//        customer.setCovenant("Varejo");
-//        customer.setAccountHolder(true);
-//        customer.setName("Dummy");
-//
-//        CustomerResponseDTO response = customerMapper.toDTO(customer);
-//
-//        when(recoverCustomerClient.getCustomer(any())).thenReturn(response);
-//        when(simulationRepository.findByIdAndCpf(any(), any())).thenReturn(simulation);
-////        when(customerMapper.toDTO((Customer) any())).thenReturn(response);
-//
-//
-//
-//        SimulationDTO result = simulationService.findByIdAndCpf(id, cpf);
-//
-//        assertEquals(response.cpf(), result.cpf());
-//    }
 }
 
 
-
-
-//        Simulation simulation = simulationRepository.findByIdAndCpf(id, cpf);
-
-//        assertNotNull(simulation);
-
-
-
-
-//
-//        SimulationDTO simulationDTO = simulationService.findByIdAndCpf(id, cpf);
-//
-//        Simulation simulationFinal = simulationConverter.toEntity(simulationDTO);
-
-//        assertNotNull(simulationFinal, "The variable simulation should be of type Simulation");
-//        assertEquals(simulationFinal.getCpf(), cpf);
-//    }
 
 
