@@ -207,10 +207,11 @@ public class SimulationServiceTest {
 
         Simulation simulation = new Simulation();
         simulation.setFee(2.0);
+        simulation.setNumberInstallments(12);
 
         Simulation result = simulationService.totalAmount(simulationData, simulation);
 
-        assertEquals(102.0, result.getPaymentAmount(), 0.01);
+        assertEquals(124.0, result.getPaymentAmount(), 0.01);
     }
 
 
